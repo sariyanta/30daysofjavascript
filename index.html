@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>30 Days of JavaScript</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<main>
+    <h1>30 Days JavaScript</h1>
+    <section id="drum-kit">
+        <h2>Drum Kit</h2>
+        <div class="dance">
+
+        </div>
+        <div class="keys">
+            <div class="key" data-key="a" data-color="#020300" data-bg="js-drum-kit/images/dance-1.png">A</div>
+            <div class="key" data-key="s" data-color="#0e0d08" data-bg="js-drum-kit/images/dance-2.png">S</div>
+            <div class="key" data-key="d" data-color="#171613" data-bg="js-drum-kit/images/dance-3.png">D</div>
+            <div class="key" data-key="f" data-color="#1f242b" data-bg="js-drum-kit/images/dance-4.png">F</div>
+            <div class="key" data-key="g" data-color="#162d40" data-bg="js-drum-kit/images/dance-5.png">G</div>
+            <div class="key" data-key="h" data-color="#0e0d08" data-bg="js-drum-kit/images/dance-6.png">H</div>
+            <div class="key" data-key="j" data-color="#171613" data-bg="js-drum-kit/images/dance-7.png">J</div>
+            <div class="key" data-key="k" data-color="#1f242b" data-bg="js-drum-kit/images/dance-8.png">K</div>
+            <div class="key" data-key="l" data-color="#162d40" data-bg="js-drum-kit/images/dance-9.png">L</div>
+        </div>
+
+        <audio src="js-drum-kit/sounds/boom.wav" data-key="a"></audio>
+        <audio src="js-drum-kit/sounds/clap.wav" data-key="s"></audio>
+        <audio src="js-drum-kit/sounds/hihat.wav" data-key="d"></audio>
+        <audio src="js-drum-kit/sounds/kick.wav" data-key="f"></audio>
+        <audio src="js-drum-kit/sounds/openhat.wav" data-key="g"></audio>
+        <audio src="js-drum-kit/sounds/ride.wav" data-key="h"></audio>
+        <audio src="js-drum-kit/sounds/snare.wav" data-key="j"></audio>
+        <audio src="js-drum-kit/sounds/tink.wav" data-key="k"></audio>
+        <audio src="js-drum-kit/sounds/tom.wav" data-key="l"></audio>
+    </section>
+    <section id="clock">
+        <h2>Clock</h2>
+        <div class="clock-face">
+            <div class="clock-hand hour"></div>
+            <div class="clock-hand minute"></div>
+            <div class="clock-hand seconds"></div>
+            <div class="clock-center"></div>
+        </div>
+        <div class="sound-control">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-volume-mute" viewBox="0 0 16 16">
+                <path d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06zM6 5.04 4.312 6.39A.5.5 0 0 1 4 6.5H2v3h2a.5.5 0 0 1 .312.11L6 10.96V5.04zm7.854.606a.5.5 0 0 1 0 .708L12.207 8l1.647 1.646a.5.5 0 0 1-.708.708L11.5 8.707l-1.646 1.647a.5.5 0 0 1-.708-.708L10.793 8 9.146 6.354a.5.5 0 1 1 .708-.708L11.5 7.293l1.646-1.647a.5.5 0 0 1 .708 0z"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-volume-up-fill" viewBox="0 0 16 16">
+                <path d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z"/>
+                <path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z"/>
+                <path d="M8.707 11.182A4.486 4.486 0 0 0 10.025 8a4.486 4.486 0 0 0-1.318-3.182L8 5.525A3.489 3.489 0 0 1 9.025 8 3.49 3.49 0 0 1 8 10.475l.707.707zM6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06z"/>
+              </svg>
+        </div>
+    </section>
+</main>
+
+<script src="script.js"></script>
+<script src="//unpkg.com/alpinejs" defer></script>
+</body>
+</html>
